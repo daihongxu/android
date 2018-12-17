@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    tools:context=".nextActivity"
+    >
+
+    <TextView
+        android:id="@+id/DisplayHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="start|center_vertical"
+        android:textSize="60dp"
+        android:maxLines="1"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DisplayHorizontal"
+        android:id="@+id/ResultHorizontal"
+        android:gravity="end|center_vertical"
+        android:textSize="80dp"
+        android:layout_above="@+id/ScienceLayout"/>
+
+    <GridLayout
+        android:layout_width="210dp"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:rowCount="4"
+        android:columnCount="3"
+        android:id="@+id/ScienceLayout"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/Sin"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="sin"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            />
+        <Button
+            android:id="@+id/Cos"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="cos"
+
+            />
+        <Button
+            android:id="@+id/Tan"
+            android:text="tan"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+
+            />
+        <Button
+            android:id="@+id/Square"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="x²"
+
+            />
+        <Button
+            android:id="@+id/Cube"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="x³"
+
+            />
+        <Button
+            android:id="@+id/NSquare"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="xˆy"
+
+            />
+        <Button
+            android:id="@+id/Reciprocal"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="1/x"
+
+            />
+        <Button
+            android:id="@+id/Root"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="√x"
+
+            />
+        <Button
+            android:id="@+id/Pai"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="Π"
+
+            />
+        <Button
+            android:id="@+id/Log"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="log"
+            />
+
+        <Button
+            android:id="@+id/zuo"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="("
+
+            />
+        <Button
+            android:id="@+id/you"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text=")"
+
+            />
+
+
+            />
+
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_toRightOf="@+id/ScienceLayout"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:rowCount="4"
+        android:columnCount="5"
+        android:layout_weight="1"
+        >
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="7"
+            android:id="@+id/ScienceNum7"
+
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="8"
+            android:id="@+id/ScienceNum8"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="9"
+            android:id="@+id/ScienceNum9"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="+"
+            android:id="@+id/ScienceAdd"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="×"
+            android:id="@+id/ScienceMultiplication"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="4"
+            android:id="@+id/ScienceNum4"
+
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="5"
+            android:id="@+id/ScienceNum5"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="6"
+            android:id="@+id/ScienceNum6"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="-"
+            android:id="@+id/ScienceReduce"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="÷"
+            android:id="@+id/ScienceDivision"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="1"
+            android:id="@+id/ScienceNum1"
+
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="2"
+            android:id="@+id/ScienceNum2"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="3"
+            android:id="@+id/ScienceNum3"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="C"
+            android:id="@+id/ScienceClear"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="←"
+            android:id="@+id/ScienceBackSpace"
+            />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="Trans"
+            android:id="@+id/transferCalculate"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="0"
+            android:id="@+id/ScienceNum0"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:text="."
+            android:id="@+id/SciencePoint"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_height="50dp"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:text="="
+            android:id="@+id/ScienceEqual"
+
+            />
+    </GridLayout>
+
+</RelativeLayout>
